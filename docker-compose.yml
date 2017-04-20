@@ -1,0 +1,9 @@
+version: '2'
+services:
+  php:
+    build: .
+    ports:
+      - '80:80'
+    volumes:
+      - ./src:/var/www/html/
+      - ./conf/vhost:/etc/httpd/vhost
